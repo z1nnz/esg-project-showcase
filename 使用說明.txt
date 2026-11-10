@@ -1,0 +1,11 @@
+智能企業永續平台｜專題介紹網站
+
+以提供的 115.11.06 網頁版型重新整理內容，可直接在瀏覽器開啟 index.html 或 index.htm。保留同一資料夾中的 style.css、script.js、assets 和所有網頁檔案。
+
+index.htm／index.html：專題緣起、特色及學術／實務貢獻。
+team.htm／team.html：六位組員資料、自我介紹與心得；照片為待補位置。
+system.html：系統四個步驟的展示總覽。
+system01.htm～system04.htm：四頁系統展示及說明。
+
+系統畫面取自先前的功能測試，並非新版每個功能的截圖；Power BI 連線與儀表板仍待實際完成及驗證。
+收到照片後可將圖片放進 assets，修改 team.html、team.htm 中對應姓名的圖片位置，並同步更新公開網站。

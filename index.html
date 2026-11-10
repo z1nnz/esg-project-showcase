@@ -1,10 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="0;url=index.htm">
-<title>智能企業永續平台｜專題介紹網站</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="智能企業永續平台：以 AI 輔助整理永續資料、人工確認並匯入 MySQL，為後續 Power BI 分析建立基礎。">
+  <title>專題簡介｜智能企業永續平台</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body><p>正在開啟專題介紹網站。若未自動跳轉，請點選<a href="index.htm">進入網站</a>。</p></body>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="assets/leaf.svg" class="brand-leaf" alt=""><span>智能企業永續平台</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="開啟選單">☰</button>
+      <nav class="nav" id="main-nav" aria-label="網站導覽">
+        <a class="nav-link active" href="index.html" aria-current="page">首頁</a>
+        <details class="nav-dropdown"><summary>專題簡介 <span class="arrow">⌄</span></summary>
+          <div class="dropdown-list"><a href="index.html#origin">專題緣起</a><a href="index.html#features">專題特色</a><a href="index.html#contribution">專題貢獻</a></div>
+        </details>
+        <a class="nav-link" href="team.html">組員資料</a>
+        <a class="nav-link" href="system.html">專題系統畫面展示</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-label="首頁 Banner">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-inner"><p class="hero-kicker">SUSTAINABILITY × DATA × AI</p><h1>智能企業永續平台</h1><span class="hero-underline"></span><p class="hero-subtitle">從永續資料整理出發，為分析與決策建立基礎。</p></div>
+      <img class="hero-wave" src="assets/wave.svg" alt="">
+    </section>
+    <div class="home-sections container">
+      <section class="intro-row" id="origin">
+        <div class="intro-label"><div class="intro-icon" aria-hidden="true"><img src="assets/leaf.svg" alt=""></div><h2>專題緣起</h2></div>
+        <div class="intro-copy"><p>企業的永續資訊常散落在不同年度的報告與表格中；指標、單位和統計範圍也可能不同，讓資料查找、整理與跨年度比較變得耗時。</p><p>我們以台北富邦商業銀行公開永續報告作為應用情境，結合 AI、MySQL 與後續 Power BI 分析，探索如何將資料整理為可追溯、可比較的形式，協助永續金融相關作業。</p></div>
+      </section>
+      <section class="intro-row" id="features">
+        <div class="intro-label"><div class="intro-icon" aria-hidden="true"><span class="bar-icon"><i></i><i></i><i></i></span></div><h2>專題特色</h2></div>
+        <div class="intro-copy"><ul class="feature-list">
+          <li><strong>檔案上傳與 AI 輔助：</strong>讀取 Excel／CSV，由 AI 協助辨識資料問題與分析欄位。</li>
+          <li><strong>人工確認與修改：</strong>保留資料預覽與編輯功能，讓使用者核對指標、年度、單位與範圍。</li>
+          <li><strong>建立分析資料：</strong>將年度欄展開，區分實績與目標、明細與合計；重複或不明資料須先處理。</li>
+          <li><strong>資料庫與後續分析：</strong>確認後寫入 MySQL，保留來源及版本，為 Power BI 圖表連線作準備。</li>
+        </ul></div>
+      </section>
+      <section class="intro-row" id="contribution">
+        <div class="intro-label"><div class="intro-icon" aria-hidden="true"><img src="assets/contribution.svg" alt=""></div><h2>專題貢獻</h2></div>
+        <div class="intro-copy contribution-copy">
+          <div><h3>對學術界</h3><p>提供結合永續資訊、AI 輔助判讀與資料建模的跨領域實作案例，為後續研究資料品質、欄位辨識與人工審核流程建立基礎。</p></div>
+          <div><h3>對實務界</h3><p>協助將分散的永續資料整理成具一致欄位與來源脈絡的分析資料，減少重複彙整，支援未來的趨勢比較與管理討論。</p></div>
+        </div>
+      </section>
+      <section class="home-next" aria-label="了解專題系統"><div><h2>從資料整理走向永續分析</h2><p>看看系統如何從客戶上傳、人工確認，到資料入庫逐步建立分析基礎。</p></div><a class="action-link" href="system.html">查看系統展示 <span aria-hidden="true">→</span></a></section>
+    </div>
+</main>
+  <footer class="site-footer"><span class="footer-line"></span><span>智能企業永續平台</span><span class="footer-line"></span></footer>
+</body>
 </html>
