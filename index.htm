@@ -20,7 +20,7 @@
           <div class="dropdown-list"><a href="index.html#origin">專題緣起</a><a href="index.html#features">專題特色</a><a href="index.html#contribution">專題貢獻</a></div>
         </details>
         <a class="nav-link" href="team.html">組員資料</a>
-        <a class="nav-link" href="system.html">專題系統畫面展示</a>
+
       </nav>
     </div>
   </header>
@@ -33,27 +33,29 @@
     <div class="home-sections container">
       <section class="intro-row" id="origin">
         <div class="intro-label"><div class="intro-icon" aria-hidden="true"><img src="assets/leaf.svg" alt=""></div><h2>專題緣起</h2></div>
-        <div class="intro-copy"><p>企業的永續資訊常散落在不同年度的報告與表格中；指標、單位和統計範圍也可能不同，讓資料查找、整理與跨年度比較變得耗時。</p><p>我們以台北富邦商業銀行公開永續報告作為應用情境，結合 AI、MySQL 與後續 Power BI 分析，探索如何將資料整理為可追溯、可比較的形式，協助永續金融相關作業。</p></div>
+        <div class="intro-copy"><p>在全球永續發展趨勢下，ESG 議題已成為企業必須面對的課題。我國金管會推動「公司治理 3.0－永續發展藍圖」，要求金融機構與大型企業強化永續資訊揭露；對金融業而言，永續資訊更與投資、授信及風險管理息息相關。</p><p>然而，永續報告書大多是一年一版的靜態 PDF，動輒上百頁，內容以文字為主，關鍵數據分散在不同章節與表格中。如果要從中找出關鍵指標、比較歷年變化，或進一步了解碳排放與綠色金融等議題，需要投入大量時間閱讀、整理與分析。</p><p>因此，本團隊以永續金融為核心，開發「智能企業永續平台」，希望改善永續資訊的整理與分析方式。平台結合生成式 AI、資料庫與 Power BI，將靜態的永續報告書轉化為可摘要、可比較、可視覺化的分析工具，協助金融機構更有效率地運用永續資訊。</p></div>
       </section>
       <section class="intro-row" id="features">
         <div class="intro-label"><div class="intro-icon" aria-hidden="true"><span class="bar-icon"><i></i><i></i><i></i></span></div><h2>專題特色</h2></div>
-        <div class="intro-copy"><ul class="feature-list">
-          <li><strong>檔案上傳與 AI 輔助：</strong>讀取 Excel／CSV，由 AI 協助辨識資料問題與分析欄位。</li>
-          <li><strong>人工確認與修改：</strong>保留資料預覽與編輯功能，讓使用者核對指標、年度、單位與範圍。</li>
-          <li><strong>建立分析資料：</strong>將年度欄展開，區分實績與目標、明細與合計；重複或不明資料須先處理。</li>
-          <li><strong>資料庫與後續分析：</strong>確認後寫入 MySQL，保留來源及版本，為 Power BI 圖表連線作準備。</li>
-        </ul></div>
+        <div class="intro-copy"><div class="content-item"><h3>1. Power BI 儀表板</h3><p>我們將永續報告書中的 ESG 指標整理後存入 MySQL 資料庫，再以 Power BI 製作互動式儀表板，呈現碳排放、綠色金融等指標的歷年變化。使用者可以依年度和指標類別篩選，不必反覆翻閱報告書，就能看出各項指標的變化趨勢。</p></div>
+<div class="content-item"><h3>2. 永續報告書建議</h3><p>系統比較了公股銀行與民營銀行的永續策略和相關措施，整理出兩類銀行在綠色金融、碳管理等方面的差異，再由 AI 歸納出值得參考的方向，提供銀行高層規劃後續永續策略時參考。</p></div>
+<div class="content-item"><h3>3. 永續報告書摘要</h3><p>永續報告書用大量文字說明策略與執行情形，讀者不容易抓到重點。系統以生成式 AI 分析報告書內容，將銀行的永續策略、具體執行措施和執行成效整理成摘要，讓使用者在短時間內了解這家銀行的永續經營方向。</p></div></div>
       </section>
       <section class="intro-row" id="contribution">
         <div class="intro-label"><div class="intro-icon" aria-hidden="true"><img src="assets/contribution.svg" alt=""></div><h2>專題貢獻</h2></div>
         <div class="intro-copy contribution-copy">
-          <div><h3>對學術界</h3><p>提供結合永續資訊、AI 輔助判讀與資料建模的跨領域實作案例，為後續研究資料品質、欄位辨識與人工審核流程建立基礎。</p></div>
-          <div><h3>對實務界</h3><p>協助將分散的永續資料整理成具一致欄位與來源脈絡的分析資料，減少重複彙整，支援未來的趨勢比較與管理討論。</p></div>
+          <section class="contribution-group"><h3>學術貢獻</h3><div class="content-item"><h4>1. 探討生成式 AI 在永續報告書的應用</h4><p>永續報告書的內容大多是長篇文字和表格，過去主要依靠人工閱讀整理。本專題以生成式 AI 分析台北富邦銀行的永續報告書，從中擷取碳排放、綠色金融等數據，並歸納永續策略與執行成效，藉此了解生成式 AI 用於分析永續報告書的可行性，以及哪些結果仍需要人工檢查。</p></div>
+<div class="content-item"><h4>2. 探討 Power BI 在永續報告書的應用</h4><p>永續報告書中的數據分布在不同章節，難以直接比較。本專題依指標類別建立資料欄位，將各年度數據存入資料庫，再用 Power BI 的互動式圖表呈現歷年趨勢，作為視覺化工具應用於永續資訊分析的一個實例。</p></div>
+<div class="content-item"><h4>3. 未來相關研究與系統開發的參考</h4><p>本專題以台北富邦銀行為例，結合生成式 AI、資料庫與 Power BI，完成永續報告書分析系統的實作，並比較了公股與民營銀行的永續策略。系統架構和比較結果，可以提供後續永續金融相關研究與系統開發參考。</p></div></section>
+          <section class="contribution-group"><h3>實務貢獻</h3><div class="content-item"><h4>1. 降低永續報告書整理的人工作業負擔</h4><p>使用者不必逐頁閱讀整本報告書，可以先從系統整理的摘要掌握重點；歷年指標統一存放在資料庫中，跨年度比對時也不需要重新手動彙整，能減少閱讀和整理資料的時間。</p></div>
+<div class="content-item"><h4>2. 提升資料可讀性</h4><p>報告書中分散的文字與數據轉換成 Power BI 圖表後，碳排放、綠色金融等指標的歷年變化能夠清楚呈現。即使不是永續或財務背景的人，也能快速理解銀行目前的永續表現。</p></div>
+<div class="content-item"><h4>3. 輔助金融機構永續策略與未來改善方向</h4><p>系統會比較歷年數據和同業表現，並參考公股與民營銀行的不同做法，提出可以改善的方向。管理階層和永續部門可以將這些結果作為規劃策略時的參考，檢視目前的優勢與不足之處。</p></div></section>
         </div>
       </section>
-      <section class="home-next" aria-label="了解專題系統"><div><h2>從資料整理走向永續分析</h2><p>看看系統如何從客戶上傳、人工確認，到資料入庫逐步建立分析基礎。</p></div><a class="action-link" href="system.html">查看系統展示 <span aria-hidden="true">→</span></a></section>
+
     </div>
 </main>
   <footer class="site-footer"><span class="footer-line"></span><span>智能企業永續平台</span><span class="footer-line"></span></footer>
 </body>
 </html>
+

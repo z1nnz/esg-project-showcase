@@ -190,6 +190,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .member-photo { height: 158px; position: relative; flex-direction: column; gap: 4px; }
 .member-photo img { width: 65px; height: 65px; object-fit: contain; }
 .member-photo span { color: #526e77; font-size: 14px; }
+.member-photo.has-photo { overflow: hidden; }
+.member-photo.has-photo img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 1; }
 .member-details { margin: 0; }
 .member-details > div { align-items: baseline; }
 .member-details dt { flex: 0 0 auto; }
@@ -235,3 +237,31 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .step-nav { justify-content: flex-start; }
 }
 @media (max-width: 370px) { .member-photo { width: 100%; } }
+
+/* 首頁長篇內容的標題與段落 */
+.intro-copy .content-item + .content-item { margin-top: 22px; }
+.intro-copy .content-item h3, .intro-copy .content-item h4 { margin: 0 0 7px; font-size: 18px; line-height: 1.55; color: #005f73; }
+.intro-copy .content-item p { margin: 0; }
+.contribution-copy { gap: 30px; }
+.contribution-group + .contribution-group { border-top: 1px solid #d9ebe7; padding-top: 25px; }
+.contribution-group > h3 { margin: 0 0 18px; font-size: 21px; }
+
+/* 加大內文及各層標題，方便閱讀 */
+body { font-size: 19px; line-height: 1.9; }
+.nav { font-size: 17px; }
+.intro-label h2 { font-size: 27px; }
+.intro-copy .content-item h3, .intro-copy .content-item h4 { font-size: 21px; line-height: 1.55; }
+.contribution-group > h3 { font-size: 23px; }
+.member-field h2 { font-size: 21px; }
+.member-field p { font-size: 18px; line-height: 1.9; }
+.field-label, .member-details dd { font-size: 18px; }
+.page-intro { font-size: 19px; }
+@media (max-width: 650px) {
+  body { font-size: 18px; line-height: 1.85; }
+  .intro-label h2 { font-size: 24px; }
+  .intro-copy .content-item h3, .intro-copy .content-item h4 { font-size: 20px; }
+  .member-field p { font-size: 18px; }
+  .field-label, .member-details dd { font-size: 17px; }
+  .page-intro { font-size: 18px; }
+}
+
